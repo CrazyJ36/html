@@ -1,0 +1,7 @@
+The file html-css-js-aio.html is A website file
+that can display text, ui, and can do ux things like
+buttons. This is done by coding HTML(text), CSS(colors),
+and Javascript(Dialog) in one file.
+The file may sometimes have the extension '.design',
+but if renamed to '.html', it may easily be opened in
+any web browser.
