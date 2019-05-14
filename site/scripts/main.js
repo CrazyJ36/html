@@ -1,30 +1,27 @@
 alert("hello world")
 // no chars are escaped in javascript. string in quotes
-// function to write directly to html document. 
+// function to write directly to html document.
 
-document.write("Using: document.write(this).<p><br></p><br> is NewLine in html js.") //semicolons optional
-document.write(5) // write int directly no quotes
-document.write(2+2) // arithmetic is processed: + - / *(?) < > ==
-document.write(5 > 3) // booleans statements 'questions' return true false
+document.write("Using: document.write(this).<p><br></p>is NewLine in html js.") //semicolons optional
+document.write(5)<br> // write int directly no quotes
+document.write(2+2)<br> // arithmetic is processed: + - / *(?) < > ==
+document.write(5 > 3)<br> // booleans statements 'questions' return true false
 
 var var1 = "string"
-document.write(var1)
-	
-var par2 = document.getElementById("IdPar").innerHtml()
-	
-par2.setTextContent(var1)
+document.write(var1)<br>
 
 // get user input with document.getElementById().value
 myFunc();
-myFunc2("text1")
-myFunc2("text2") 
-	
+myFunc2("text1") // argument/parameter. "text1" is what will replace 'txt'.
+myFunc2("text2")
+
 function btnFunc() {
-    document.write("this is printed from myFunc()")
+    document.write("myFunc() executed.<br>You typed: ''")
 }
 
 function mFunc2(txt) { // might only be able to use ids
-	document.write(txt)
+        txtNl = str.concat(txt, "<br>")
+	document.write(txtNl)
 }
 
 // Change Header(h1) Text
