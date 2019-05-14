@@ -1,20 +1,60 @@
 <!DOCTYPE html>
+<!-- comment. can't use // in html, use in script -->
+
 <html>
   <head>
     <link rel="stylesheet" href="main.css">
-    <title>CrazyJ36s' Webpage</title>
+    <title>Web title</title>
   </head>
+
   <body>
-    <h1>Hello from CrazyJ36</h1>
-      <p>This could host code stuff.<br><var>Use,</var> later.</p><!-- <br> or <br/> line-break --> 
-      <code>#include &ltstdio.h&gt<br>
-        int main() {<br><br>}
+
+    <h1>header 1</h1>
+      <p>paragraph 1<br><var>var1</var> var2</p><!-- <br> or <br/> line-break --> 
+      <code>code<br>
+        broken lines between these {<br><br>}
       </code><br><br>
-    <a href="http://google.com">Google development!</a>
-    <h1>Second Section</h1>
-      <p>More stuff!</p>
-  <script src="scripts/main.js"></script>
+    <a href="http://google.com">a link</a>
+
+    <h1>header 2</h1>
+      <p>paragraph in header 2</p>
+      <p id="IDedParagraph"> Paragraph accessible with id in javascript. using document.getElementsByTagName(['p', "ifOfParagraph"]. .innerHtml()</p><!-- ('p') for any paragraph?, or (idOfParagraph)-->
+
+    <input type="text" id="input">
+    <button onclick="myFunc()">btn title</button>
+
+  <!-- load script after loading html text for speed -->
+  <script>
+    // comment
+    <!-- load javascript -->
+    src="scripts/main.js"
+
+    <!-- function to write directly to html document. no chars are escaped in javascript. string in quotes-->
+    document.write("doc write: \n :)!") <!-- semicolons optional-->
+    document.write(5) <!-- write int directly no quotes -->
+    document.write(2+2) <!-- arithmetic is processed -->
+    <!-- + - / *(?) < > ==-->
+    document.write(5 > 3) <!-- booleans statements 'questions' return true false-->
+    var var1 = "string"
+    document.write(var1)
+    var par2 = document.getElementById("IDedParagraph").innerHtml()
+    document.write(par2)
+    
+    // get user input with document.getElementById().value
+    myFunc();
+    myFunc2("text1")
+    myFunc2("text2") 
+    function myFunc() {
+      document.write("this is printed from myFunc()")
+    }
+    function mFunc2(txt) { <!-- might only be able to use ids -->
+      document.write(txt)
+    }
+        
+  </script>
+
   </body>
+
 </html>
 
 
