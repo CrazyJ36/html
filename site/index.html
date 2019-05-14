@@ -72,19 +72,19 @@
 				margin-top: 0.67em;
 				}
 			</style>-->
-		  
-			<!--<h1>header 2</h1>
-			<p>paragraph in header 2</p>
-			<p id="IDedParagraph"> Paragraph accessible with id in javascript.
-			  Using document.getElementsByTagName(['p', "ifOfParagraph"]. 
-			  .innerHtml()</p><!-- ('p') for any paragraph?, or 
-			  (idOfParagraph)-->-->
 			  
 			<input type="text" id="input">
 			<button onclick="myFunc()">btn title</button>
+			<br>
 			End of paragraph.
 			
 		</p>
+
+		<p id="IdPar">Last  Paragraph</p>
+                  <!--Accessible with id in javascript
+		  Using :
+                  document.getElementsByTagName(['p', "iDOfParagraph"].innerHtml()
+      	          or .getElementById()-->
 
 	<!--SPLIT DOCUMENT INTO SECTIONS-->
 
@@ -93,20 +93,20 @@
 	<!-- load script after loading html text for speed -->
 	<script>
 	// comment
-	<!-- load javascript -->
+	// load javascript
 	src="scripts/main.js"
 
 	// function to write directly to html document. 
-	// no chars are escaped in javascript. string in quotes-->
-	document.write("doc write: \n :)!") <!-- semicolons optional-->
-	document.write(5) // write int directly no quotes -->
-	document.write(2+2) // arithmetic is processed -->
-					// -- + - / *(?) < > ==-->
+	// no chars are escaped in javascript. string in quotes
+	document.write("doc write: \n :)!") //semicolons optional
+	document.write(5) // write int directly no quotes
+	document.write(2+2) // arithmetic is processed 
+			    // + - / *(?) < > ==
 	document.write(5 > 3) // booleans statements 'questions'
-					  // return true false
+			      // return true false
 	var var1 = "string"
 	document.write(var1)
-	var par2 = document.getElementById("IDedParagraph").innerHtml()
+	var par2 = document.getElementById("IdPar").innerHtml()
 	document.write(par2)
 
 	// get user input with document.getElementById().value
