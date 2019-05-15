@@ -72,13 +72,13 @@
 				var name and text to insert.
 				Variables look Italic in many browsers view.-->
 				<!--TODO: change these variables-->
-			<var>A variable.</var><var> Another var</var><br><br>
+			<var>A variable.</var><var> Another var</var><br>
 		
 		    <!--You can add an ID to whole elements to modify them in css
 			or javascript. "codeIntro" definition is in stylesheet.css
 			inline style eg: <p color="red">Some code!</p> seems to only
 			support one attribute.-->
-		    <p id="codeIntro">Some code!</p>
+		    <p id="codeIntro">Some C code!</p>
 			
 			<!--The code tag is intresting in that it show programming code
 			in A viewer friendly way, readable just as if it were to be
@@ -93,11 +93,8 @@
 			
 			<hr width="30%" align="left">  
 			
-			<input type="text" id="input">
-		    
-			<button onclick="btnFunc()">Btn Title</button>
-			<br><br>
-			<button onclick="hangeParagraph()">TextCh</button>
+			<!--btn is linked to A function on script-->
+			<button onclick="chText()">Btn</button>
 			<br>
 			
 		</p>
@@ -105,7 +102,7 @@
 		<!--Access ids' in javascript using :
 		var string1 = document.getElementsById(iDOfParagraph].innerHtml()
 		-->
-		<p id="IdPar">Last Paragraph</p>
+		<p id="idPar">Last Paragraph</p>
     
 	    <!--load script after loading html text for speed-->
 		<script src="main.js"></script>

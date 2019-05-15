@@ -1,36 +1,32 @@
-alert("hello world")
-// no chars are escaped in javascript. string in quotes
-// function to write directly to html document.
+//semicolons optional in javascript/html/chrome
 
-document.write("Using: document.write(this).<p><br></p>is NewLine in html js.") //semicolons optional
-document.write(5)<br> // write int directly no quotes
-document.write(2+2)<br> // arithmetic is processed: + - / *(?) < > ==
-document.write(5 > 3)<br> // booleans statements 'questions' return true false
+// Basic web dialog:
+ alert("hello world")
 
-var var1 = "string"
-document.write(var1)<br>
+// Write directly to html document using same html text tags:
+document.write("Using: document.write(this) <br>")
 
+document.write("Concat" + " text<br>") // concatenate like java
+
+// Shows how to use an int together with string in one .write().
+// Also, <br> may be used in line of string .write("text <br>"), as:
+// document.write(1 + "<br>"). There are no data type conflicts. 
+// Operator precedence like-formulas are used to get obvious result.
+document.write("An int: " + 5 + "<br>") // write int directly no quotes
+
+// Here ("string", arithmetic + "string") notice the comma is needed
+// because were not concatenating 2+2 with "string" + "string".
+// we want to print ("string", then-do-math + "string)
+document.write("2 plus 2 is: ", 2+2 + "<br>") // arithmetic is processed: + - / *(?) < > ==
+
+// Booleans statements like this return and print true or false.
+document.write(5 > 3 + "<br>") 
+
+function chText() {
+	idpar = document.getElementById("idPar")
+    idpar.innerHTML =  "New text for Last Paragraph."
+}
+
+// TODO:
 // get user input with document.getElementById().value
-myFunc();
-myFunc2("text1") // argument/parameter. "text1" is what will replace 'txt'.
-myFunc2("text2")
 
-function btnFunc() {
-    document.write("myFunc() executed.<br>You typed: ''")
-}
-
-function mFunc2(txt) { // might only be able to use ids
-        txtNl = str.concat(txt, "<br>")
-	document.write(txtNl)
-}
-
-// Change Header(h1) Text
-var headerText = document.getElementsByTagName('h1')
-headerText.onclick = chHeaderText()
-function chHeaderText() {
-	headerText.textContent = '<h1>clicked';
-}
-
-function changeLastParagraph() {
-	getElementById(IdPar).textContent = "New text for Last Paragraph."
-}
