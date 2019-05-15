@@ -1,60 +1,127 @@
 <!DOCTYPE html>
-<!-- comment. can't use // in html, use in script -->
+<!-- This is A comment, HTML type. You can't use '//' in html, 
+     use that in javascript. -->
 
 <html>
-  <head>
-    <link rel="stylesheet" href="main.css">
-    <title>Web title</title>
-  </head>
 
-  <body>
+    <!--<head></head> - Represents the Metadata of an HTML document.
+        In  can contain metadata tags such as: title, description,
+	    and keywords.
+	    Common tags included here are: <title>, one or more <meta>, A
+	    <script>, and <style> tags, all enclosed within <head> element.
+	-->
+    <head>
+	
+      <!--Link .css style file to this document-->
+      <link rel="stylesheet" href="stylesheet.css">
+	
+	  <!--Browser Webpage title-->
+      <title>Title</title>
 
-    <h1>header 1</h1>
-      <p>paragraph 1<br><var>var1</var> var2</p><!-- <br> or <br/> line-break --> 
-      <code>code<br>
-        broken lines between these {<br><br>}
-      </code><br><br>
-    <a href="http://google.com">a link</a>
+    </head>
 
-    <h1>header 2</h1>
-      <p>paragraph in header 2</p>
-      <p id="IDedParagraph"> Paragraph accessible with id in javascript. using document.getElementsByTagName(['p', "ifOfParagraph"]. .innerHtml()</p><!-- ('p') for any paragraph?, or (idOfParagraph)-->
+    <!--<body></body> - "The" document.-->
+    <body>
+  
+        <!-- <h1>: A Header element represents A container for
+        introductory content or navigational links.
+	    A header(<header>, then <h1>s' within) typically contains:
+	    The elements(<h1> - <h6>), site logo or icon, author info.
+	    There may be several <header> elements in one document.
+	    A <header> tag cannot be placed within A <footer>, <address>,
+	    or another <header> element.-->
+	    <header>
+	
+		    <!--<h1> Stands for heading, and is not A header.
+			Opening tag <h1>, closing tag </h1>-->
+		    <h1>header 1</h1>
+			
+			<!-- Include links to other pages for naviagtion-->
+			<a href="http://google.com">A link</a>
 
-    <input type="text" id="input">
-    <button onclick="myFunc()">btn title</button>
+		</header>
+		    
+		<p>
+			<!-- <p>: Paragraph has simple text and tags relating to text.-->
+			<!-- <br> is line-break aka new-line. <br> can be used to 
+				 format text on page.--> 
+			Start of Paragraph.<br> <!--Start paragraph, text to show, new-line-->
+			
+			<!--Programmed variable literal identity, to be used or changed
+				in the document without having to type it again. Variables
+				support HTML Event Attributes(detect change) and Global
+				Attributes. The text within the <var></var> tag is the
+				var name and text to insert.
+				Variables look Italic and Bold in many browsers view.-->
+			<var>A variable.</var><var> Another var</var>
+		
+			<!--The code tag is intresting in that it show programming code
+			in A viewer friendly way, readable just as if it were to be
+			compiled. You can use <var> to 'program-the-text' in <code>-->
+			<code>int main()<br>
+				<!--"&nbsp;" represents and inserts A space. Also see the
+				<pre> tag (Preformatted Text)-->
+				{<br>&nbsp;&nbsp;char code = statements;<br>}
+			</code><br><br>
+	  
+			
+			<!--<style>
+				h1 { 
+				display: block;
+				font-size: 2em;
+				margin-top: 0.67em;
+				}
+			</style>-->
+		  
+			<!--<h1>header 2</h1>
+			<p>paragraph in header 2</p>
+			<p id="IDedParagraph"> Paragraph accessible with id in javascript.
+			  Using document.getElementsByTagName(['p', "ifOfParagraph"]. 
+			  .innerHtml()</p><!-- ('p') for any paragraph?, or 
+			  (idOfParagraph)-->-->
+			  
+			<input type="text" id="input">
+			<button onclick="myFunc()">btn title</button>
+			End of paragraph.
+			
+		</p>
 
-  <!-- load script after loading html text for speed -->
-  <script>
-    // comment
-    <!-- load javascript -->
-    src="scripts/main.js"
+	<!--SPLIT DOCUMENT INTO SECTIONS-->
 
-    <!-- function to write directly to html document. no chars are escaped in javascript. string in quotes-->
-    document.write("doc write: \n :)!") <!-- semicolons optional-->
-    document.write(5) <!-- write int directly no quotes -->
-    document.write(2+2) <!-- arithmetic is processed -->
-    <!-- + - / *(?) < > ==-->
-    document.write(5 > 3) <!-- booleans statements 'questions' return true false-->
-    var var1 = "string"
-    document.write(var1)
-    var par2 = document.getElementById("IDedParagraph").innerHtml()
-    document.write(par2)
-    
-    // get user input with document.getElementById().value
-    myFunc();
-    myFunc2("text1")
-    myFunc2("text2") 
-    function myFunc() {
-      document.write("this is printed from myFunc()")
-    }
-    function mFunc2(txt) { <!-- might only be able to use ids -->
-      document.write(txt)
-    }
-        
-  </script>
+    </body>
+	  
+	<!-- load script after loading html text for speed -->
+	<script>
+	// comment
+	<!-- load javascript -->
+	src="scripts/main.js"
 
-  </body>
+	// function to write directly to html document. 
+	// no chars are escaped in javascript. string in quotes-->
+	document.write("doc write: \n :)!") <!-- semicolons optional-->
+	document.write(5) // write int directly no quotes -->
+	document.write(2+2) // arithmetic is processed -->
+					// -- + - / *(?) < > ==-->
+	document.write(5 > 3) // booleans statements 'questions'
+					  // return true false
+	var var1 = "string"
+	document.write(var1)
+	var par2 = document.getElementById("IDedParagraph").innerHtml()
+	document.write(par2)
 
+	// get user input with document.getElementById().value
+	myFunc();
+	myFunc2("text1")
+	myFunc2("text2") 
+	function myFunc() {
+	document.write("this is printed from myFunc()")
+	}
+	function mFunc2(txt) { // might only be able to use ids
+	document.write(txt)
+	}
+
+	</script>
+	
 </html>
 
 

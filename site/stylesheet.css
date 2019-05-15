@@ -1,0 +1,7 @@
+/* This is A comment in CSS(Cascading Style Sheet,
+   no single-line comments('//'). */
+
+/* Style for all variables */
+var {
+    font-weight: bold;
+}
