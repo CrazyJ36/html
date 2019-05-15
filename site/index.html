@@ -16,8 +16,8 @@
 	
 	    <!--Browser Webpage title-->
         <title>Title</title>
-	  
-	    <!-- You can set styles for individual parts here:
+
+	    <!-- You can set styles for individual parts here in <head>:
 		<head>
 			<style>
 				h1 { 
@@ -47,21 +47,23 @@
 			Opening tag <h1>, closing tag </h1>-->
 		    <h1>header 1</h1>
 			
-			<!-- Include links to other pages for naviagtion-->
-			Navigation:<br> 
-			<a href="http://google.com">A link</a>
-
+			<p>
+		    <!-- Include links to other pages for naviagtion-->
+			Navigation:<br> <a href="http://google.com">A link</a>
+		    </p>
+			
 		</header>
 		
-		<!-- <p>: Paragraph block contains simple text/tags relating to text.-->
+		<!--<p>: Paragraph block contains simple text,
+		    or tags relating to text.-->
 		<p>
             
 			<!--<hr> Horizontal seperator:
-			    <hr width="pecent" color="#000000 noshade(solid)>
-				Or just do "<br>-----<br>for manual line.-->
-			<hr width="90%">
+			    <hr width="pecent" color="#000000" noshade> // no shade is solid 
+				Or just do "<br>-----<br>" for manual line.-->
+			<hr width="30%" align="left">
 
-			Start of Paragraph.<br> <!--Paragraph text to show, new-line-->
+			Start of Paragraph.<br> <!--Regular text to show, new-line-->
 			
 			<!--Programmed variable literal identity, to be used or changed
 				in the document without having to type it again. Variables
@@ -69,6 +71,7 @@
 				Attributes. The text within the <var></var> tag is the
 				var name and text to insert.
 				Variables look Italic in many browsers view.-->
+				<!--TODO: change these variables-->
 			<var>A variable.</var><var> Another var</var><br><br>
 		
 		    <!--You can add an ID to whole elements to modify them in css
@@ -83,57 +86,30 @@
 			<code>int main()<br>
 				<!--"&nbsp;" represents and inserts A space. Also see the
 				<pre> tag (Preformatted Text)-->
-				{<br>&nbsp;&nbsp;char code = statements;<br>}
+				{<br>&nbsp;&nbsp;char code[11] = "statements";<br>}
 			</code><br><br>
-			  
+			
+			End of paragraph. <!--Regular text.-->
+			
+			<hr width="30%" align="left">  
+			
 			<input type="text" id="input">
-			<button onclick="myFunc()">btn title</button>
+		    
+			<button onclick="btnFunc()">Btn Title</button>
+			<br><br>
+			<button onclick="hangeParagraph()">TextCh</button>
 			<br>
-			End of paragraph.
 			
 		</p>
 
-		<p id="IdPar">Last  Paragraph</p>
-                  <!--Accessible with id in javascript
-		  Using :
-                  document.getElementsByTagName(['p', "iDOfParagraph"].innerHtml()
-      	          or .getElementById()-->
+		<!--Access ids' in javascript using :
+		var string1 = document.getElementsById(iDOfParagraph].innerHtml()
+		-->
+		<p id="IdPar">Last Paragraph</p>
 
-	<!--SPLIT DOCUMENT INTO SECTIONS-->
-
-    </body>
-	  
-	<!-- load script after loading html text for speed -->
-	<script>
-	// comment
-	// load javascript
-	src="scripts/main.js"
-
-	// function to write directly to html document. 
-	// no chars are escaped in javascript. string in quotes
-	document.write("doc write: \n :)!") //semicolons optional
-	document.write(5) // write int directly no quotes
-	document.write(2+2) // arithmetic is processed 
-			    // + - / *(?) < > ==
-	document.write(5 > 3) // booleans statements 'questions'
-			      // return true false
-	var var1 = "string"
-	document.write(var1)
-	var par2 = document.getElementById("IdPar").innerHtml()
-	document.write(par2)
-
-	// get user input with document.getElementById().value
-	myFunc();
-	myFunc2("text1")
-	myFunc2("text2") 
-	function myFunc() {
-	document.write("this is printed from myFunc()")
-	}
-	function mFunc2(txt) { // might only be able to use ids
-	document.write(txt)
-	}
-
-	</script>
+        <!--load script after loading html text for speed-->
+		<script src="scripts/main.js"></script>
+    </body>	  	
 	
 </html>
 
