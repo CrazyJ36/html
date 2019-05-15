@@ -1,5 +1,15 @@
 //semicolons optional in javascript/html/chrome
 
+
+/*var headerTxt = document.querySelector('h1');
+
+querySelector() returns the first Element within the document that matches the specified selector
+var btn = document.querySelector('button');
+
+btn.onclick = function() {
+	headerTxt.textContent = 'Button clicked';
+}*/
+
 // Basic web dialog:
  alert("hello world")
 
