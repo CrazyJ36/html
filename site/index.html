@@ -5,25 +5,36 @@
 <html>
 
     <!--<head></head> - Represents the Metadata of an HTML document.
-        In  can contain metadata tags such as: title, description,
-	    and keywords.
-	    Common tags included here are: <title>, one or more <meta>, A
-	    <script>, and <style> tags, all enclosed within <head> element.
+        In  can contain metadata tags such as: window title, description,
+	    and keywords. Common tags included here are: <title>, <link> to css,
+		<meta>, <script>, and <style> tags, all enclosed within <head> element.
 	-->
     <head>
 	
-      <!--Link .css style file to this document-->
-      <link rel="stylesheet" href="stylesheet.css">
+        <!--Link to external .css style file(same directory) to this document-->
+        <link rel="stylesheet" href="stylesheet.css">
 	
-	  <!--Browser Webpage title-->
-      <title>Title</title>
+	    <!--Browser Webpage title-->
+        <title>Title</title>
+	  
+	    <!-- You can set styles for individual parts here:
+		<head>
+			<style>
+				h1 { 
+				display: block;
+				font-size: 2em;
+				margin-top: 0.67em;
+				}
+			</style>
+		</head>
+		-->
 
     </head>
 
     <!--<body></body> - "The" document.-->
     <body>
   
-        <!-- <h1>: A Header element represents A container for
+        <!--<header> element is A container for
         introductory content or navigational links.
 	    A header(<header>, then <h1>s' within) typically contains:
 	    The elements(<h1> - <h6>), site logo or icon, author info.
@@ -37,24 +48,35 @@
 		    <h1>header 1</h1>
 			
 			<!-- Include links to other pages for naviagtion-->
+			Navigation:<br> 
 			<a href="http://google.com">A link</a>
 
 		</header>
-		    
+		
+		<!-- <p>: Paragraph block contains simple text/tags relating to text.-->
 		<p>
-			<!-- <p>: Paragraph has simple text and tags relating to text.-->
-			<!-- <br> is line-break aka new-line. <br> can be used to 
-				 format text on page.--> 
-			Start of Paragraph.<br> <!--Start paragraph, text to show, new-line-->
+            
+			<!--<hr> Horizontal seperator:
+			    <hr width="pecent" color="#000000 noshade(solid)>
+				Or just do "<br>-----<br>for manual line.-->
+			<hr width="90%">
+
+			Start of Paragraph.<br> <!--Paragraph text to show, new-line-->
 			
 			<!--Programmed variable literal identity, to be used or changed
 				in the document without having to type it again. Variables
 				support HTML Event Attributes(detect change) and Global
 				Attributes. The text within the <var></var> tag is the
 				var name and text to insert.
-				Variables look Italic and Bold in many browsers view.-->
-			<var>A variable.</var><var> Another var</var>
+				Variables look Italic in many browsers view.-->
+			<var>A variable.</var><var> Another var</var><br><br>
 		
+		    <!--You can add an ID to whole elements to modify them in css
+			or javascript. "codeIntro" definition is in stylesheet.css
+			inline style eg: <p color="red">Some code!</p> seems to only
+			support one attribute.-->
+		    <p id="codeIntro">Some code!</p>
+			
 			<!--The code tag is intresting in that it show programming code
 			in A viewer friendly way, readable just as if it were to be
 			compiled. You can use <var> to 'program-the-text' in <code>-->
@@ -63,15 +85,6 @@
 				<pre> tag (Preformatted Text)-->
 				{<br>&nbsp;&nbsp;char code = statements;<br>}
 			</code><br><br>
-	  
-			
-			<!--<style>
-				h1 { 
-				display: block;
-				font-size: 2em;
-				margin-top: 0.67em;
-				}
-			</style>-->
 			  
 			<input type="text" id="input">
 			<button onclick="myFunc()">btn title</button>
