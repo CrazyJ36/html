@@ -2,11 +2,20 @@
    no single-line comments('//'). */
 
 /* Style for all variables */
-var { font-weight: bold }
+var {
+    font-weight: bold
+}
 
 /* To style an single ID: <p id="codeIntro">Some code!</p>, at index.html:  */
-#codeIntro{	color:blue }
+#codeIntro{
+    color:blue
+}
 
 p.classedParagraph {
-	color: green;
+    color: green;
 }
+
+.btnStyleTemplate {
+    padding: 15px 32px;
+    font-size: 18px;
+}  

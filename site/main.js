@@ -11,7 +11,7 @@ btn.onclick = function() {
 }*/
 
 // Basic web dialog:
- alert("hello world")
+ alert("This website is not important. Just A template for my personal HTML learning progress.")
 
 // Write directly to html document using same html text tags:
 document.write("Using: document.write(this) <br>")
@@ -20,7 +20,7 @@ document.write("Concat" + " text<br>") // concatenate like java
 
 // Shows how to use an int together with string in one .write().
 // Also, <br> may be used in line of string .write("text <br>"), as:
-// document.write(1 + "<br>"). There are no data type conflicts. 
+// document.write(1 + "<br>"). There are no data type conflicts.
 // Operator precedence like-formulas are used to get obvious result.
 document.write("An int: " + 5 + "<br>") // write int directly no quotes
 
@@ -30,7 +30,7 @@ document.write("An int: " + 5 + "<br>") // write int directly no quotes
 document.write("2 plus 2 is: ", 2+2 + "<br>") // arithmetic is processed: + - / *(?) < > ==
 
 // Booleans statements like this return and print true or false.
-document.write(5 > 3 + "<br>") 
+document.write(5 > 3 + "<br>")
 
 function chText() {
 	idpar = document.getElementById("idPar")
