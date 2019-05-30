@@ -15,7 +15,12 @@ p.classedParagraph {
     color: green;
 }
 
+/* Class styles should show as .name{} */
 .btnStyleTemplate {
     padding: 12px 24px;
-    font-size: 16px;
+    font-size: 18px;
 }  
+
+.finePrint {
+   font-size: 4sp;
+}
