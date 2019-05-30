@@ -11,7 +11,7 @@ btn.onclick = function() {
 }*/
 
 // Basic web dialog:
- alert("This website is not important. Just A template for my personal HTML learning progress.")
+alert("This website is not important. Just A template for my personal HTML learning progress.")
 
 // Write directly to html document using same html text tags:
 document.write("Using: document.write(this) <br>")
@@ -32,6 +32,18 @@ document.write("2 plus 2 is: ", 2+2 + "<br>") // arithmetic is processed: + - / 
 // Booleans statements like this return and print true or false.
 document.write(5 > 3 + "<br>")
 
+// If else
+if ("hello" == "Hello") {
+  document.write(" hello is the same as Hello" + "<br>")
+} else {
+  document.write(" hello is not the same as Hello" + "<br>")
+}
+
+// Variable
+var myNum = 6
+document.write(myNum)
+
+// function called from html button onclick=""
 function chText() {
 	idpar = document.getElementById("idPar")
     idpar.innerHTML =  "New text for Last Paragraph."
