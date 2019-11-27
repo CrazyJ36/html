@@ -1,14 +1,14 @@
 //semicolons optional in javascript/html/chrome
 
 
-/*var headerTxt = document.querySelector('h1');
+var headerTxt = document.querySelector('h1');
 
-querySelector() returns the first Element within the document that matches the specified selector
+// querySelector() returns the first Element within the document that matches the specified selector
 var btn = document.querySelector('button');
 
-btn.onclick = function() {
-	headerTxt.textContent = 'Button clicked';
-}*/
+headerTxt.onclick = function() {
+	headerTxt.textContent = 'header 1 clicked';
+}
 
 // Basic web dialog:
 alert("This website is not important. Just A template for my personal HTML learning progress.")
