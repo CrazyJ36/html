@@ -1,10 +1,11 @@
 //semicolons optional in javascript/html/chrome
 
-
 var headerTxt = document.querySelector('h1');
 
-// querySelector() returns the first Element within the document that matches the specified selector
-var btn = document.querySelector('button');
+// querySelector() returns the first Element within the document that matches the specified tag name.
+// eg. if your document has only one <button>, you could use querySelector('button').
+// I gave my desired button A name <
+var btn = document.querySelector('btn1');
 
 headerTxt.onclick = function() {
 	headerTxt.textContent = 'header 1 clicked';

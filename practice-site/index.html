@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- This is A comment, HTML type. You can't use '//' in html, 
-     use that in javascript. -->
+<!-- This is A comment, HTML type. You can't use '/* */' in html, 
+     use that in javascript, no single-line comments '//' though. -->
 
 <html>
 
@@ -8,13 +8,17 @@
         In  can contain metadata tags such as: window title, description,
 	    and keywords. Common tags included here are: <title>, <link> to css,
 		<meta>, <script>, and <style> tags, all enclosed within <head> element.
+		You can easily specify scaling for your webpage on mobile devices here with:
+		<meta name="viewport" content="720, initial-scale=1">
 	-->
     <head>
 	
         <!--Link to external .css style file(same directory) to this document-->
         <link rel="stylesheet" href="stylesheet.css">
 		
-	
+		<!--You can easily specify scaling for your webpage on mobile device with:-->
+		<meta name="viewport" content="720, initial-scale=1">
+
 	    <!--Browser Webpage title-->
         <title>crazyj36devel</title>
 	
@@ -46,7 +50,8 @@
 	
 		    <!--<h1> Stands for heading, and is not A header.
 			Opening tag <h1>, closing tag </h1>-->
-		    <h1>header 1, clickable</h1>
+			<h1>header 1(h1), clickable</h1>
+			<h2>header 2</h2>
 	            <p>
 		        <!-- Include links to other pages for naviagtion <a> Anchor tag, reference, and name of link-->
 			Navigation:<br>
@@ -93,14 +98,12 @@
 			</code><br><br>
 			
 			End of paragraph. <!--Regular text.-->
-			
 			<hr width="30%" align="left">  
-			
-			<!--btn is linked to A function on script-->
-			<button class="btnStyleTemplate" onclick="chText()">Btn</button>
-			<br>
-			
 		</p>
+			<!--btn is linked to A function on script-->
+			<button class="btnStyleTemplate" onclick="chText()" type="button" name="btn3">Btn</button>
+			<button></button>
+			<br>
 
 		<!--Access ids' in javascript using :
 		var string1 = document.getElementsById(iDOfParagraph].innerHtml()
