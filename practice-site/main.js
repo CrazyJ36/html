@@ -2,17 +2,9 @@
 
 var headerTxt = document.querySelector('h1');
 
-// querySelector() returns the first Element within the document that matches the specified tag name.
-// eg. if your document has only one <button>, you could use querySelector('button').
-// I gave my desired button A name <
-var btn = document.querySelector('btn1');
-
 headerTxt.onclick = function() {
 	headerTxt.textContent = 'header 1 clicked';
 }
-
-// Basic web dialog:
-alert("This website is not important. Just A template for my personal HTML learning progress.")
 
 // Write directly to html document using same html text tags:
 document.write("Using: document.write(this) <br>")
@@ -45,9 +37,25 @@ var myNum = 6
 document.write(myNum)
 
 // function called from html button onclick=""
+// button that changes paragraph text.
+// querySelector() returns the first Element within the document that matches the specified tag name.
+// eg. if your document has only one <button>, you could use querySelector('button').
+// I gave my desired button A name <
+// not needed as onclick is set, but to use btn in code:
+// var btn = document.querySelector(tag'button', or name'btn1');
 function chText() {
 	idpar = document.getElementById("idPar")
     idpar.innerHTML =  "New text for Last Paragraph."
+}
+
+// Basic web dialog:
+function my_alert() {
+  // Alert button id 'idBtn2'
+  alert("Alert popup showing!")
+
+  // A method to change the button text
+  var btn_txt = document.createTextNode(' was shown');
+  document.getElementById('idBtn2').appendChild(btn_txt);
 }
 
 // TODO:

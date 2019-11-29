@@ -17,9 +17,10 @@ p.classedParagraph {
 
 /* Class styles should show as .name{} */
 .btnStyleTemplate {
+    /* set button size */
+    width:64px;
+    height:44px;
     background-color: antiquewhite;
-    /*padding: 12px 24px;
-    //font-size: 18px;*/
 }  
 
 .finePrint {
