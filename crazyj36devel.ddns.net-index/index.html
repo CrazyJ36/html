@@ -2,53 +2,62 @@
 
 <html>
     <head>
-
-        <!--Link to external .css style file(same directory) to this document-->
-        <link rel="stylesheet" href="stylesheet.css">
-    
         <!--You can easily specify scaling for your webpage on mobile device with:-->
         <meta name="viewport" content="720, initial-scale=1">
-    
         <!--Browser Webpage title-->
         <title>CrazyJ36</title>
+        <style>
+            body {
+                background-image: url("res/background.jpg");
+            }
+        </style>
     </head>
+ 
     <body>
         <header>
             <h1>CrazyJ36</h1>
+                <img src="res/photo1.jpg" alt="CrazyJ36 Artist Photo 1" style="width:128px;height:128px">
+                <img src="res/photo2.jpg" alt="CrazyJ36 Artist Photo 2" style="width:128px;height:128px">
+                <img src="res/photo3.png" alt="CrazyJ36 Artist Photo 3" style="width:128px;height:128px">
             <p>
                 <!-- Include links to other pages for naviagtion <a> Anchor tag,
                     reference, and name of link-->
-                Hear on:<br>
+                <h1>Stream</h1>
                 <a href="https://open.spotify.com/artist/02UTIVsX3sxUEjvIONrzFe?si=czn77zBiSsaiYsrZHbNoAA"><img src="res/spotify.png" height="32px" width="32px"></a>
                 <a href="https://music.apple.com/us/artist/crazyj36/1484534553"><img src="res/apple.png" height="32px" width="32px"></a>
                 <a href="https://www.youtube.com/channel/UCkqq7czM18MH53Kmwf_Cckw/"><img src="res/youtube.png" height="32px" width="32px"></a>
                 <a href="https://tidal.com/browse/artist/17178181"><img src="res/tidal.png" height="32px" width="32px"></a>
                 <a href="https://www.deezer.com/artist/76904902?utm_source=deezer&utm_content=artist-76904902&utm_term=3188329784_1589753827&utm_medium=web"><img src="res/deezer.png" height="32px" width="32px"></a>
-                <br>
-                Get in touch:<br>
-                <a href="http://facebook.com/CrazyJ36Music">Facebook</a>
-                <a href="http://twitter.com/CrazyJ36">Twitter</a>
-                <a href="https://www.instagram.com/crazyj36/">Instagram</a>
+                <a href="https://music.amazon.com/artists/B07ZG4K6JH?ref=dm_sh_48f7-c154-dmcp-2b38-52fb8&musicTerritory=US&marketplaceId=ATVPDKIKX0DER"><img src="res/amazon.png" height="32px" width="32px"></a>
+                <br><br>
+                <h1>Follow</h1>
+                <a href="http://facebook.com/CrazyJ36Music"><img src="res/facebook.png"></a>
+                <a href="http://twitter.com/CrazyJ36"><img src="res/twitter.png"></a>
+                <a href="https://www.instagram.com/crazyj36/"><img src="res/instagram.png"></a>
+                <iframe
+                    src="https://open.spotify.com/follow/1/?uri=spotify:artist:02UTIVsX3sxUEjvIONrzFe?si=go_AvQPITbi1qyzmCVzQ8Q&size=basic&theme=light"
+                    width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true">
+                </iframe>
                 <br>
             </p>
         </header>
         
-        <h2>Music</h2>
+        <h1>Listen and Buy</h1>
         <iframe
             width="100%" height="265" scrolling="no" frameborder="no"
             src="https://www.reverbnation.com/widget_code/html_widget/artist_6894672?widget_id=55&pwc[included_songs]=1&context_type=page_object&spoid=artist_6894672&pwc[size]=small&pwc[branded]=0"
             style="width:0px;min-width:100%;max-width:100%;">
         </iframe>
-
-        <h3>Bio</h3>
+        
+        <h1>Bio</h1>
         <p>An Independent Instrumental Guitarist, CrazyJ36s' Guitar Music is Original, and Exciting!<br>
             The Music is meant to please the casual listener. Targeting World Music, using influences from Rock, Jazz, RnB, and Classical.<br>
             The Guitarist, Songwriter, and Producer behind the name is Thomas James Kennedy, born 1989 in Tampa, Florida now residing in Central Florida.<br>
             A self-taught Musician, CrazyJ36 has been making Music since his childhood, always looking to hear the coolest sounds possible.<br>
             In his personal time, for self-healing, he practices A mix between Tai-Chi and Shamanism.<br>
-            His Music is available to hear or purchase on any Streaming Service!<br>
         </p>
         
+        <h1>Learn More</h1>
         <div class="widget_iframe" style="display:inline-block;width:300px;height:185px;margin:0;padding:0;border:0;">
             <iframe class="widget_iframe" 
                 src="https://www.reverbnation.com/widget_code/html_widget/artist_6894672?widget_id=54&amp;posted_by=artist_6894672&pwc[design]=customized&pwc[background_color]=%23333333&pwc[size]=custom" 
@@ -72,8 +81,11 @@
                 frameborder="0" scrolling="no" >
             </iframe>
         </div>
-        
-        <a href="dev/index.html">CrazyJ36 Development</a>
+        <p>
+        <a href="dev/index.html">CrazyJ36 Web Development</a>
+        <br>
+        @CrazyJ36 2020
+        </p>
     </body>
     
 </html>
