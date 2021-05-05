@@ -126,20 +126,22 @@
 		-->
 	<p id="idPar">A Paragraph</p>
 
+	<!-- Change text inline instead of in javascript like above-->
+	<p id="pChangeText">press button 2</p>
+	<button
+	    type="button"
+		onclick="document.getElementById('pChangeText').innerHTML = 'button 2 pressed' ">Btn2</button>
+
 	<!--The Global Class attribute is usually used to point to A
 		    class in stylesheet or javascript. 'class="name"' can be added
 			to any element to provide specification. A style for the class
 			can be added inline or in stylesheet.-->
-
 	<p class="classedParagraph">Paragraph given an individual class name,
 		classed attributes managed with stylesheet.css</p>
 	<p class="classedParagraph">Another paragraph initialized under the same
 		class name as above, therefore the same style is used.</p>
 
 	Random text, not specifically formatted.
-	<br><br>
-	<!--load script after loading html text for speed-->
-	<script src="main.js"></script>
 	<br><br>
 
 	<footer style="font-size:9px">
