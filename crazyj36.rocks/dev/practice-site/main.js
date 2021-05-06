@@ -60,4 +60,5 @@ function my_alert() {
 
 // TODO:
 // get user input with document.getElementById().value
+// Opens file in new browser window: window.open("file://C:/xampp/htdocs/emails.txt");
 
