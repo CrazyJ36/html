@@ -49,4 +49,16 @@ body {
     text-align: center;
     color: whitesmoke;
     width: 90%;
+} ::placeholder {
+    color: dimgray;
+} button {
+    background-color: #555555;
+    border: none;
+    color: whitesmoke;
+    padding: 6px 12px;
+    margin: 4px 2px;
+} :focus {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255,255 ,255, 0);
+    -webkit-tap-highlight-color: transparent;
 }
