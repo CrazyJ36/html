@@ -152,19 +152,23 @@
         </div><br>
         <div>
             <form id="form" method="POST">
-                <label for="email" style="color:whitesmoke">Signup to hear about new music first:</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter email" style="height: 20px;width: 250px; background-color: whitesmoke;" required><br>
+                <label id="email-label" for="email-field-id" style="color:whitesmoke">Signup to hear about new music first:</label><br>
+                <input type="email" id="email-field-id" placeholder="Enter email" style="height: 20px;width: 250px; background-color: whitesmoke;" required><br>
             </form>
-            <button onclick="SubmitFormData();">Send Music!</button>
-            <p id="results"></p>
+            <button onclick="submitFormToPHP();">Send Music!</button>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script>
-            // routes form data to and from php without reloading page as is.
-            function SubmitFormData() {
-                var email = $("#email").val();
-                $.post("save-email.php", {email: email}, function(data) {
-                    $('#results').html(data);
+            // routes form data to and from php in post without reloading page. js and ajax initiate backend php.
+            function submitFormToPHP() {
+                var email_value = $("#email-field-id").val();
+                /* in ajax, says'on post do', instead of A direct file action as in form action=
+                $.post(URL, data, callback); URL being php script to run, {data} being string data to
+                send to and bring back from post, callback will call that data that had been proccessed
+                in php back here to the email-label id. */
+                $.post("save-email.php", {email_value}, function(data) {
+                    if ($.get("save-email.php"))
+                    $('#email-label').html(data);
                     $('#form')[0].reset();
                 });
                 return;
