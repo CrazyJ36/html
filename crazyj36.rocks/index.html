@@ -167,6 +167,7 @@
                 send to and bring back from post, callback will call that data that had been proccessed
                 in php back here to the email-label id. */
                 $.post("save-email.php", {email_value}, function(data) {
+                    // get from php (it's not run directly, just post and get.)
                     if ($.get("save-email.php"))
                     $('#email-label').html(data);
                     $('#form')[0].reset();
@@ -182,7 +183,7 @@
             <br>or on <a href="https://www.ultimate-guitar.com/artist/crazyj36_618371">Ultimate Guitar</a>
         </pr><br><br>
         <a href="res/CrazyJ36FullBiography.txt" download>Download Full Biography</a><br><br></rb>
-        <a href="dev/index.html">CrazyJ36 Software Development</a><br>
+        <a href="https://github.com/CrazyJ36">CrazyJ36 Software Development</a><br>
         <hr>
 
         <h1>Blog</h1>
