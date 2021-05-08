@@ -2,7 +2,6 @@ body {
     background-size: cover;
     background-color: black;
     width: 95%;  
-    max-width:95;
     align-content: center;
     height: auto;
     position: relative;
@@ -44,12 +43,15 @@ body {
     width: 95%;
     text-align: center;
 } a {
-    color: whitesmoke
-} ul {
-    text-align: center;
     color: whitesmoke;
-    width: 90%;
-} ::placeholder {
+} ul {
+    color: whitesmoke;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    padding-right: 16px;
+    padding-left: 38px;
+}::placeholder {
     color: dimgray;
 } button {
     background-color: #555555;
