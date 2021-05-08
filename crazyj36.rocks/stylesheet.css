@@ -44,6 +44,7 @@ body {
     text-align: center;
 } a {
     color: whitesmoke;
+    align-self: center;
 } ul {
     color: whitesmoke;
     text-align: center;
