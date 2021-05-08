@@ -1,16 +1,31 @@
 body {
     background-size: cover;
     background-color: black;
-    width: 95%;  
+    width: 100%;  
+    margin: auto;
     align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
     height: auto;
-    position: relative;
+    
 } p {
     text-align: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
     color: whitesmoke;
 } h1 {
     text-align: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
     color: whitesmoke;
+    width: 95%
 } div {
     text-align: center;
     align-self: center;
@@ -19,13 +34,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 95%
-} iframe {
-    text-align: center;
-    align-self: center;
-    align-content: center;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
 } form {
     text-align: center;
     align-self: center;
@@ -39,17 +47,33 @@ body {
 } header {
     width: 95%;
     text-align: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
 } footer {
     width: 95%;
     text-align: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
 } a {
     color: whitesmoke;
     align-self: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
 } ul {
     color: whitesmoke;
     text-align: center;
     align-content: center;
     align-items: center;
+    align-self: center;
     padding-right: 16px;
     padding-left: 38px;
 }::placeholder {
