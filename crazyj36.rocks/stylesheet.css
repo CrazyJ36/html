@@ -68,18 +68,20 @@ body {
     margin-left: auto;
 } a {
     color: whitesmoke;
-    align-self: center;
+} ul {
+    list-style-position: outside;
+    color: whitesmoke;
     text-align: center;
     align-content: center;
+    align-self: center;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
-} ul {
-    color: whitesmoke;
     height: 300px;
     overflow: scroll;
     overflow-x: hidden;
-    padding-right: 16px;
+} li {
+    padding-right: 24px;
 }::placeholder {
     color: dimgray;
     text-align: center;
