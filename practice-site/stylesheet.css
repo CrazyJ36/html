@@ -1,0 +1,28 @@
+/* This is A comment in CSS(Cascading Style Sheet,
+   no single-line comments('//'). */
+
+/* Style for all variables */
+var {
+    font-weight: bold
+}
+
+/* To style an single ID: <p id="codeIntro">Some code!</p>, at index.html:  */
+#codeIntro{
+    color:blue
+}
+
+p.classedParagraph {
+    color: green;
+}
+
+/* Class styles should show as .name{} */
+.btnStyleTemplate {
+    /* set button size */
+    width:64px;
+    height:44px;
+    background-color: antiquewhite;
+}  
+
+.finePrint {
+   font-size: 4sp;
+}

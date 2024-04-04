@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- This is A comment, HTML type. You can't use '/* */' in html, 
+     use that in javascript, no single-line comments '//' though. -->
+
+<html>
+
+<!--<head></head> - Represents the Metadata of an HTML document.
+        In  can contain metadata tags such as: window title, description,
+	    and keywords. Common tags included here are: <title>, <link> to css,
+		<meta>, <script>, and <style> tags, all enclosed within <head> element.
+		You can easily specify scaling for your webpage on mobile devices here with:
+		<meta name="viewport" content="720, initial-scale=1">
+	-->
+
+<head>
+	<!-- Prevent web crawlers from including this page in web search results-->
+	<meta name="robots" content="noindex">
+
+	<!--Link to external .css style file(same directory) to this document-->
+	<link rel="stylesheet" href="stylesheet.css">
+
+	<!--You can easily specify scaling for your webpage on mobile device with:-->
+	<meta name="viewport" content="720, initial-scale=1">
+
+	<!--Browser Webpage title-->
+	<title>Dev Practice</title>
+
+	<!-- You can set styles for individual parts here in <head>:
+		<head>
+			<style>
+				h1 { 
+				display: block;
+				font-size: 2em;
+				margin-top: 0.67em;
+				}
+			</style>
+		</head>
+		-->
+
+</head>
+
+<!--<body></body> - "The" document.-->
+
+<body>
+
+	<!--<header> element is A container for
+        introductory content or navigational links.
+	    A header(<header>, then <h1>s' within) typically contains:
+	    The elements(<h1> - <h6>), site logo or icon, author info.
+	    There may be several <header> elements in one document.
+	    A <header> tag cannot be placed within A <footer>, <address>,
+	    or another <header> element.-->
+	<header>
+
+		<!--<h1> Stands for heading, and is not A header.
+			Opening tag <h1>, closing tag </h1>-->
+		<h1>header 1(h1), clickable</h1>
+		<h2>header 2</h2>
+		<p>
+			<!-- Include links to other pages for naviagtion <a> Anchor tag,
+				reference, and name of link-->
+			Navigation:<br>
+			<a href="http://crazyj36dev.ddns.net">This page</a><br>
+			<a href="http://google.com">Google</a><br>
+			<a href="http://msn.com">MSN News</a><br>
+		</p>
+
+	</header>
+
+	<!--<p>: Paragraph block contains simple text,
+		    or tags relating to text.-->
+	<p>
+
+		<!--<hr> Horizontal seperator:
+			    <hr width="pecent" color="#000000" noshade> // no shade is solid 
+				Or just do "<br>-----<br>" for manual line.-->
+		<hr width="30%" align="left">
+
+		Start of Paragraph.<br>
+		<!--Regular text to show, new-line-->
+
+		<!--Programmed variable literal identity, to be used or changed
+				in the document without having to type it again. Variables
+				support HTML Event Attributes(detect change) and Global
+				Attributes. The text within the <var></var> tag is the
+				var name and text to insert.
+				Variables look Italic in many browsers view.-->
+		<!--TODO: change these variables-->
+		<var>A variable.</var><var> Another var</var><br>
+
+		<!--You can add an ID to whole elements to modify them in css
+			or javascript. "codeIntro" definition is in stylesheet.css
+			inline style eg: <p color="red">Some code!</p> seems to only
+			support one attribute.-->
+		<p id="codeIntro">Some C code!</p>
+
+		<!--The code tag is intresting in that it show programming code
+			in A viewer friendly way, readable just as if it were to be
+			compiled. You can use <var> to 'program-the-text' in <code>-->
+		<code>int main()<br>
+				<!--"&nbsp;" represents and inserts A space. Also see the
+				<pre> tag (Preformatted Text)-->
+				{<br>&nbsp;&nbsp;char code[11] = "statements";<br>}
+			</code><br><br>
+
+		End of paragraph.
+		<!--Regular text.-->
+		<hr width="30%" align="left">
+	</p>
+	<!--button is linked to A functions in javascript(main.js) for click events
+		using tag attribute: onclick="js_function()".
+		'type=' attribute is uneeded unless the button should do something
+		that involves forms, built-in types are:
+		submit - sends data,
+		reset - resets all controls/forms,
+		button - default/anonymous with no default behavior, normal for js functions.
+		- the class of first button enables the defining button 
+		attributes(eg. colors) in css.
+	-->
+	<button class="btnStyleTemplate" onclick="chText()" type="button" id="idBtn1">Btn</button>
+	<button onclick="my_alert()" id="idBtn2">Alert</button>
+	<br>
+
+	<!--Access ids' in javascript using :
+		var string1 = document.getElementsById(iDOfParagraph].innerHtml()
+		-->
+	<p id="idPar">A Paragraph</p>
+
+	<!-- Change text inline instead of in javascript like above-->
+	<p id="pChangeText">press button 2</p>
+	<button
+	    type="button"
+		onclick="document.getElementById('pChangeText').innerHTML = 'button 2 pressed' ">Btn2</button>
+
+	<!--The Global Class attribute is usually used to point to A
+		    class in stylesheet or javascript. 'class="name"' can be added
+			to any element to provide specification. A style for the class
+			can be added inline or in stylesheet.-->
+	<p class="classedParagraph">Paragraph given an individual class name,
+		classed attributes managed with stylesheet.css</p>
+	<p class="classedParagraph">Another paragraph initialized under the same
+		class name as above, therefore the same style is used.</p>
+
+	Random text, not specifically formatted.
+	<br><br>
+
+	<footer style="font-size:9px">
+		Copyright 2019 Thomas Kennedy (CrazyJ36)
+		<!-- <a> Hyperlink Anchor used to link to email or another page -->
+		<a href="mailto:crazy_j36@hotmail.com">Contact CrazyJ36</a>
+	</footer>
+
+</body>
+
+</html>
