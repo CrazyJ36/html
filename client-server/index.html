@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHP Tests</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <h1>Testing client-server interop.</h1>
+    <body>
+        <p class="client-text-field">Client</p>
+        <p class="server-var-field"></p> <!--Will be filled in from server.-->
+        <p class="alert-successful-placeholder"></p>
+        <button onclick="getVariablesFromServer()">Get Server Var</button>
+        <button onclick="runBrowserCodeFromPhp()">Run Browser Code From Server PHP</button>
+    </body>
+</html>
