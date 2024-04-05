@@ -1,4 +1,3 @@
 <?php 
-    $value = getenv('TestEnvironmentVariable', true);
-    echo $value
+    echo apache_getenv('TestEnvironmentVariable', true);
 ?> 
