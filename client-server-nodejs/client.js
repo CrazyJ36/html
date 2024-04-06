@@ -3,10 +3,9 @@ $.ajax({
     type: 'GET',
     url: 'https://crazyj36.rocks:3000/',
     success: function(response) {
-        alert('connected to node.js server!');
+        alert(response);
     },
-    error: function(err) {
-        alert('couldn\'t connect to node.js server:\n' + err.error);
+    error: function(error) {
+        alert('couldn\'t connect to node.js server:\n' + error.error);
     }
-}).then(res => res.json())
-.then(res => alert(res));
+})
